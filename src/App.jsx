@@ -1,23 +1,22 @@
-
 import './App.css'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Menu from './components/Menu'
-import MenuCard from './components/MenuCard'
-import Visual from './components/Visual'
+import Counter from './components/Counter'
+import Exam1 from './components/Exam1'
+import Exam2 from './components/Exam2'
+import Exam3 from './components/Exam3'
+
 function App() {
+  const user={
+    name:'Alice',
+    age:21
+  }
   return (
-  <main>
-  <Header logo={'🥐 bread day'}/>
-  <Visual 
-  sub={'매일 아침 7시, 갓 구운 빵'}
-  title={'오늘도 따뜻한 빵 한 조각'}
-  />
-  <Menu/>
-  <Footer address={'서울시 중강루 상봉동 빱굽는길'}
-  hours={'07:00~20:00 (월요일은 휴무)'}
-  />
-  </main >
+    <main>
+      <Exam3/>
+      <Exam2/>
+      <Exam1 {...user}/>
+      <h1>hello react</h1>
+      <Counter />
+    </main >
   )
 }
 export default App
