@@ -1,14 +1,19 @@
 import './App.css'
-import SquareCalc from './components/SquareCalc'
-import SortTableList from './components/SortTableList'
-import PeopleList from './components/PeopleList'
+import TodoList from './components/TodoList'
+import UserList from './components/UserList'
+import UserDetail from './components/UserDetail'
+import DummyCart from './components/DummyCart'
+import DummyRecipes from './components/DummyRecipes'
 function App() {
 
   return (
+
     <main>
-      <PeopleList/>
-      {/* <SortTableList/> */}
-      {/* <SquareCalc /> */}
+      {/* <UserList />
+      <TodoList />
+      <UserDetail /> */}
+      {/* <DummyCart /> */}
+      <DummyRecipes/>
     </main >
   )
 }
